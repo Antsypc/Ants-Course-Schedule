@@ -1,0 +1,154 @@
+html, body, .wrapper {
+  height: 100%;
+}
+
+body {
+  background: #d2d6de;
+}
+
+.background {
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.login-page .container {
+  width: 100%;
+  max-width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 32px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.6);
+}
+@media(max-width: 768px) {
+  .login-page .container {
+    padding: 24px 18px;
+  }
+}
+
+.login-page .field {
+  font-size: 18px;
+  height: 48px;
+  margin: 0 0 18px;
+  position: relative;
+  border-radius: 8px;
+}
+.login-page :last-child {
+  margin-bottom: 0;
+}
+
+.login-page .field label {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.login-page .field .form-control {
+  font-size: 18px;
+  width: 100%;
+  height: 48px;
+  background: rgba(255,255,255,.5);
+  color: rgba(0,0,0,.7);
+  padding: 12px 1em;
+  padding-left: 2.6em;
+  border-radius: .3125em;
+}
+.login-page .field .form-control:focus {
+  color: rgba(0,0,0,.85);
+}
+
+.login-page input::-webkit-input-placeholder {
+  color: rgba(0,0,0,.5);
+}
+.login-page input::-ms-input-placeholder {
+  color: rgba(0,0,0,.5);
+}
+.login-page input::-moz-placeholder {
+  color: rgba(0,0,0,.5);
+}
+.login-page input:focus::-webkit-input-placeholder {
+  color: rgba(0,0,0,.7);
+}
+.login-page input:focus::-ms-input-placeholder {
+  color: rgba(0,0,0,.7);
+}
+.login-page input:focus::-moz-placeholder {
+  color: rgba(0,0,0,.7);
+}
+
+.login-page .field .icon {
+  top: 14px;
+  left: 16px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.350980);
+  transition: color .3s ease-out;
+  -webkit-transition: color .3s ease-out;
+  -moz-transition: color .3s ease-out;
+  -ms-transition: color .3s ease-out;
+  -o-transition: color .3s ease-out;
+}
+.login-page .field .form-control:focus ~ .icon {
+  color: rgba(0, 0, 0, 0.701961);
+}
+
+.login-page .identity {
+  height: auto;
+}
+.login-page .identity > label {
+  float: left;
+}
+.login-page .identity .list-inline li,
+.login-page .identity .list-inline li label {
+  font-weight: normal;
+}
+.login-page .identity .list-inline li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.login-page button[type=submit] {
+  width: 100%;
+  height: 48px;
+  min-height: 1em;
+  line-height: 48px;
+  padding: 0 1.5em;
+  border: none;
+  background-color: #2eb06f;
+  border-radius: 2em;
+  outline: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity .25s ease,background-color .25s ease,color .25s ease,background .25s ease,box-shadow .25s ease;
+}
+.login-page button[type=submit]:hover {
+  background-color: #49ba81;
+}
+.login-page button[type=submit]:active {
+  background-color: #2aa165;
+}
+
+.login-page .errorbox, .login-page h1, .login-page h2, .login-page h3 {
+  margin: 0 0 18px;
+}
+.login-page .alert:last-child {
+  margin-bottom: 0;
+}
+.login-page .alert > h4 {
+  font-weight: 700;
+}
+.login-page h1:first-child, .login-page h2:first-child, .login-page h3:first-child {
+  margin-top: -.5em;
+}

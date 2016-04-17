@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="Course">
+
+    <select id="getCourseById" resultType="Course">
+        SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
+         SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
+        FROM course WHERE id = #{id}
+    </select>
+    <select id="getCourseByName" resultType="Course">
+        SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
+         SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
+        FROM course WHERE name = #{name}
+    </select>
+    <select id="getCourseByTeacherId" resultType="Course">
+        SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
+         SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
+        FROM course WHERE teacher_id = #{teacherId}
+    </select>
+    <select id="getAllCourses" resultType="Course">
+        SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
+         SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
+        FROM course
+    </select>
+    <select id="getCoursesByCondition" resultType="Course">
+        SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
+        SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
+        FROM course
+        <where>
+            <if test="major != null">
+                classes LIKE CONCAT('%',#{major}, '%')
+            </if>
+            <if test="isSchedule == 'true'.toString()">
+                AND time_from IS NOT NULL
+            </if>
+            <if test="isSchedule == 'false'.toString()">
+                AND time_from IS NULL
+            </if>
+        </where>
+    </select>
+    <select id="getChosenCourseByStudentId" resultType="Course">
+        SELECT c.id,  c.name,  c.classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
+        SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
+        FROM course AS c INNER JOIN (SELECT * FROM course_choose_log WHERE student_id = #{studentId}) AS chosen
+        ON c.id = chosen.course_id
+    </select>
+
+
+    <insert id="insertCourse" parameterType="Course">
+        INSERT INTO course(id,  name,  classes,  week_from,  week_to,  weekday,  time_from,  time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description)
+        VALUE (#{id},  #{name},  #{classes},  #{weekFrom},  #{weekTo},  #{weekday},  TIME_TO_SEC(#{timeFrom}),  TIME_TO_SEC(#{timeTo}),  #{classroomId}, #{capacity}, #{now}, #{teacherId},  #{teacherName},  #{coursewareUrl},  #{description})
+    </insert>
+
+
+    <update id="updateCourse" parameterType="Course">
+        UPDATE course SET
+            name =  #{name},
+            classes =  #{classes},
+            week_from =  #{weekFrom},
+            week_to =  #{weekTo},
+            weekday =  #{weekday},
+            time_from =  TIME_TO_SEC(#{timeFrom}),
+            time_to =  TIME_TO_SEC(#{timeTo}),
+            classroom_id =  #{classroomId},
+            capacity = #{capacity},
+            now = #{now},
+            teacher_id =  #{teacherId},
+            teacher_name =  #{teacherName},
+            courseware_url =  #{coursewareUrl},
+            description =  #{description}
+        WHERE id = #{id}
+    </update>
+
+    <update id="updateSafeForStudentChoose">
+        UPDATE course SET
+            now = now + 1
+        WHERE id = #{id} AND now &lt; capacity
+    </update>
+    <update id="updateForStudentDrop">
+        UPDATE course SET
+            now = now - 1
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteCourse">
+      DELETE FROM course WHERE id = #{id}
+    </delete>
+
+</mapper>

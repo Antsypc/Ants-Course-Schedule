@@ -1,0 +1,30 @@
+body {
+  font-family: "Segoe UI", "Open Sans", "Lucida Grande", FreeSans, Arimo, "Source Sans Pro", "Droid Sans", "Helvetica Neue", Helvetica, "Microsoft YaHei UI", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-header .logo, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+}
+.main-header .navbar-custom-menu, .main-header .navbar-right {
+  margin-right: 15px;
+}
+.main-header .navbar-custom-menu .dropdown-menu {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  border-color: #eee;
+}
+
+label.required:after {
+  content: "*";
+  color: #dd4b39;
+  font-weight: 600;
+  position: absolute;
+}
+
+.sweet-overlay {
+  z-index: 2000;
+}
+.sweet-alert .icon {
+  z-index: -1;
+}

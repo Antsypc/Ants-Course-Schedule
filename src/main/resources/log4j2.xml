@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">    <!-- target默认是SYSTEM_ERR-->
+            <!-- pattern 中详细参数见 http://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout-->
+            <PatternLayout pattern="%d [%t] %highlight{%-5level} %logger{36} - %msg%mdc%n%throwable"/>
+        </Console>
+        <File name="Login" fileName="login.log" append="false">
+            <PatternLayout pattern="%d [%t] %-5level %logger{36} - %msg%mdc%n%throwable"/>
+        </File>
+        <File name="PostCourse" fileName="post_course.log" append="false">
+            <PatternLayout pattern="%d [%t] %-5level %logger{36} - %msg%mdc%n%throwable"/>
+        </File>
+        <File name="ChooseCourse" fileName="choose_course.log" append="false">
+            <PatternLayout pattern="%d [%t] %-5level %logger{36} - %msg%mdc%n%throwable"/>
+        </File>
+    </appenders>
+
+    <loggers>
+        <root level="warn">
+            <!--<AppenderRef ref=""/>-->
+        </root>
+        <!-- 自定义logger -->
+        <Logger name="PostCourse" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="PostCourse"/>
+        </Logger>
+        <Logger name="ChooseCourse" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="ChooseCourse"/>
+        </Logger>
+        <Logger name="Login" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="Login"/>
+        </Logger>
+    </loggers>
+</configuration>
