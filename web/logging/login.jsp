@@ -57,6 +57,12 @@
 					<button type="submit">登录</button>
 				</div>
 			</form>
+            <div align="center">
+                测试账号,账号与密码一致<br/>
+                <button type="button" class="btn btn-success" style="font-size: 12px">学生: 0121310880433</button>
+                <button type="button" class="btn btn-success" style="font-size: 12px">教师: 67539863</button>
+                <button type="button" class="btn btn-success" style="font-size: 12px">管理员: 28266345</button>
+            </div>
 		</div>
 	</div>
 

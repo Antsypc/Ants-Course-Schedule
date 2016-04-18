@@ -186,8 +186,8 @@
                       <h3 class="timeline-header"><a href="#">Ants Young</a> 发布了一个公告</h3>
                       <div class="timeline-body">
                           “Ants 选课系统终于完成了！”
-                          <br> Ants 选课系统是 Ants Young 的一个课程作业.使用 J2EE 技术完成了教师,管理员,学生的基本选课逻辑.更多
-                          内容可以关注我的 github 主页 <a href="https://github.com/Antsypc">Antsypc 的 github</a>.
+                          <br> Ants 选课系统是 Ants Young 的一个课程作业.使用 J2EE 技术完成了教师,管理员,学生的基本选课逻辑.
+                          <br/>更多内容可以关注我的 github 主页 <a href="https://github.com/Antsypc">Antsypc 的 github</a>.
                       </div>
                       <div class="timeline-footer">
                           <a class="btn btn-primary btn-xs">阅读详情</a>

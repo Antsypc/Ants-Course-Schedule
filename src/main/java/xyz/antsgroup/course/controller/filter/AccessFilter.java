@@ -65,7 +65,6 @@ public class AccessFilter implements Filter {
         // 如果是不需要过滤的 path 则不过滤：这里主要是登录及登录验证的 path
         for(String s : excludeArray) {
             if(servletPath.equals(s) || servletPath.startsWith(s)) {
-                System.out.println(s + " " + servletPath);
                 chain.doFilter(request, response);
                 return;
             }
