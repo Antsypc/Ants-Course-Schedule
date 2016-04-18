@@ -2,297 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc29e494-d0b3-4381-bc11-c78f4e7088bf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/lab/ConsumablesManageServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/lab/EquipConsumCategoryServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/lab/EquipmentManageServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/lab/EquipmentRepairInfoServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/lab/LabManageSearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/lab/LabReview.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/student/ScoreServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/GetScoringTableServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/GradeStudentsWorkServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/QueryReservationServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/QueryStudentScoreServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/QueryStudentsRosterServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/SearchLabRoomServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/TeacherCancelReservationServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/TeacherReserveLabRoomServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/BaseDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/OrderDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/BaseDaoImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/ConsumablesDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/ConsumablesDetailDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/ConsumablesUsageDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/CourseChooseLogDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/CourseDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/CourseLabRoomDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/EquipmentDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/EquipmentDetailDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/EquipmentMaintenanceDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/EquipmentRepairDetailDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/EquipmentUsageDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/LabManagerDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/LabRoomDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/LabRoomUsageDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/LabWithReservationDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/OrderDaoImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/ScoreDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/StudentChooseLabDetailDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/StudentChosenCourseDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/StudentDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/StudentScoreDetailDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/StudentScoreReportDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/dao/impl/TeacherDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/Consumables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/ConsumablesDetail.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/ConsumablesUsage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/CourseLabRoom.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/Equipment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/EquipmentDetail.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/EquipmentMaintenance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/EquipmentRepairDetail.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/EquipmentUsage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/LabRoom.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/LabRoomUsage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/LabWithReservation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/Order.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/Reservation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/Schedule.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/Score.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/StudentChooseLabDetail.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/StudentChosenCourse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/StudentScoreDetail.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/entity/StudentScoreReport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/util/DBTool.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/util/EquipConsumCategoryDetail.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/lab/ConsumablesManageServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/lab/EquipConsumCategoryServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/lab/EquipmentManageServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/lab/EquipmentRepairInfoServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/lab/LabManageSearch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/lab/LabReview.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/ScoreServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/teacher/GetScoringTableServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/teacher/GradeStudentsWorkServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/teacher/QueryReservationServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/teacher/QueryStudentScoreServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/teacher/QueryStudentsRosterServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/teacher/SearchLabRoomServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/teacher/TeacherCancelReservationServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/teacher/TeacherReserveLabRoomServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/BaseDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/OrderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/BaseDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/ConsumablesDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/ConsumablesDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/ConsumablesUsageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/CourseChooseLogDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/CourseDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/CourseLabRoomDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/EquipmentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/EquipmentDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/EquipmentMaintenanceDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/EquipmentRepairDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/EquipmentUsageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/LabManagerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/LabRoomDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/LabRoomUsageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/LabWithReservationDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/OrderDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/ScoreDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/StudentChooseLabDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/StudentChosenCourseDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/StudentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/StudentScoreDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/StudentScoreReportDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/dao/impl/TeacherDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/Consumables.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/ConsumablesDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/ConsumablesUsage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/CourseLabRoom.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/Equipment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/EquipmentDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/EquipmentMaintenance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/EquipmentRepairDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/EquipmentUsage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/LabRoom.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/LabRoomUsage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/LabWithReservation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/Reservation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/Schedule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/Score.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/StudentChooseLabDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/StudentChosenCourse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/StudentScoreDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/entity/StudentScoreReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/util/Categorydetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/util/DBTool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/util/EquipConsumCategoryDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/util/MyPair.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/lab/ConsumablesManageServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/lab/EquipConsumCategoryServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/lab/EquipmentManageServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/lab/EquipmentRepairInfoServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/lab/LabManageSearch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/lab/LabReview.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/ScoreServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/teacher/GetScoringTableServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/teacher/GradeStudentsWorkServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/teacher/QueryReservationServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/teacher/QueryStudentScoreServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/teacher/QueryStudentsRosterServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/teacher/SearchLabRoomServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/teacher/TeacherCancelReservationServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/teacher/TeacherReserveLabRoomServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/BaseDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/OrderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/BaseDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/ConsumablesDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/ConsumablesDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/ConsumablesUsageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/CourseChooseLogDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/CourseDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/CourseLabRoomDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/EquipmentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/EquipmentDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/EquipmentMaintenanceDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/EquipmentRepairDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/EquipmentUsageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/LabManagerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/LabRoomDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/LabRoomUsageDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/LabWithReservationDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/OrderDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/ScoreDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/StudentChooseLabDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/StudentChosenCourseDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/StudentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/StudentScoreDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/StudentScoreReportDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/dao/impl/TeacherDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/Consumables.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/ConsumablesDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/ConsumablesUsage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/CourseLabRoom.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/Equipment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/EquipmentDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/EquipmentMaintenance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/EquipmentRepairDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/EquipmentUsage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/LabRoom.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/LabRoomUsage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/LabWithReservation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/Reservation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/Schedule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/Score.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/StudentChooseLabDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/StudentChosenCourse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/StudentScoreDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/entity/StudentScoreReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/util/Categorydetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/util/DBTool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/util/EquipConsumCategoryDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/util/MyPair.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.5.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/lib/mchange-commons-java-0.2.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/assets/vendor/bootstrap-sweetalert/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/assets/vendor/font-awesome/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/assets/vendor/jquery-backstretch/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/assets/vendor/select2/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/assets/vendor/select2/docs/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/assets/vendor/sweetalert/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/course/schedule.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/course/studentchoosecourse.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/course/studentcourse.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/course/studentscores.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/equipment/consumables.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/equipment/equipment.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/equipment/repair.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/laboratory/list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/laboratory/manage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/laboratory/reservation.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/laboratory/review.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/student-management/results.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/student-management/students.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Test$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/course/schedule.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/course/studentchoosecourse.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/course/studentcourse.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/course/studentscores.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/equipment/consumables.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/equipment/equipment.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/equipment/repair.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/laboratory/list.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/laboratory/manage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/laboratory/reservation.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/laboratory/review.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/student-management/results.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/student-management/students.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/filter/AccessFilter.class" afterPath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/filter/AccessFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/filter/AccessFilter.class" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/filter/AccessFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$1.class" afterPath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$1.class" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$2.class" afterPath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$2.class" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$3.class" afterPath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$3.class" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet.class" afterPath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet.class" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/ChooseCourseServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/CourseServlet.class" afterPath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/student/CourseServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/CourseServlet.class" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/student/CourseServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/LoginCheck.class" afterPath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/LoginCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/LoginCheck.class" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/LoginCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/manager/ManagerCourseScheduleServlet.class" afterPath="$PROJECT_DIR$/target/classes/xyz/antsgroup/course/controller/manager/ManagerCourseScheduleServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/manager/ManagerCourseScheduleServlet.class" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/xyz/antsgroup/course/controller/manager/ManagerCourseScheduleServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Test.class" afterPath="$PROJECT_DIR$/target/test-classes/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/filter/AccessFilter.java" afterPath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/filter/AccessFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/student/ChooseCourseServlet.java" afterPath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/student/ChooseCourseServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/student/CourseServlet.java" afterPath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/student/CourseServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/LoginCheck.java" afterPath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/LoginCheck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/Logout.java" afterPath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/Logout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/manager/ManagerCourseScheduleServlet.java" afterPath="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/manager/ManagerCourseScheduleServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Test.java" afterPath="$PROJECT_DIR$/src/test/java/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/manager/classroom.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/manager/classroom.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/manager/classroom.jsp" afterPath="$PROJECT_DIR$/web/manager/classroom.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/course-keshe.iml" afterPath="$PROJECT_DIR$/course-keshe.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/manager/course-schedule.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/manager/course-schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/teacher/course-schedule.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/teacher/course-schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/manager/course-schedule.jsp" afterPath="$PROJECT_DIR$/web/manager/course-schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher/course-schedule.jsp" afterPath="$PROJECT_DIR$/web/teacher/course-schedule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/manager/course.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/manager/course.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/manager/course.jsp" afterPath="$PROJECT_DIR$/web/manager/course.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/course_keshe_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/course_keshe_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/log4j2.xml" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/classes/log4j2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/login.js" afterPath="$PROJECT_DIR$/web/assets/js/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/manager.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/manager.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/profile/manager.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/profile/manager.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/manager.jsp" afterPath="$PROJECT_DIR$/web/manager.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/profile/manager.jsp" afterPath="$PROJECT_DIR$/web/profile/manager.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/student/student-choose-course.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/student/student-choose-course.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/student/student-choose-course.jsp" afterPath="$PROJECT_DIR$/web/student/student-choose-course.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/student/student-course.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/student/student-course.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/student/student-course.jsp" afterPath="$PROJECT_DIR$/web/student/student-course.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/student.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/student.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/profile/student.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/profile/student.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/student.jsp" afterPath="$PROJECT_DIR$/web/student.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/profile/student.jsp" afterPath="$PROJECT_DIR$/web/profile/student.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/teacher.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/teacher.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/profile/teacher.jsp" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/profile/teacher.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher.jsp" afterPath="$PROJECT_DIR$/web/teacher.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/profile/teacher.jsp" afterPath="$PROJECT_DIR$/web/profile/teacher.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/course-keshe-1.0-SNAPSHOT/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="course-keshe.iws" />
@@ -355,41 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Logout.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/Logout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/logging/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.518518">
-              <caret line="83" column="61" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/assets/js/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12392427">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -410,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/TeacherScheduleServlet.java" />
         <option value="$PROJECT_DIR$/web/teacher/schedule.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/teacher/QueryStudentsRosterServlet.java" />
@@ -440,13 +124,10 @@
         <option value="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/student/CourseServlet.java" />
         <option value="$PROJECT_DIR$/web/profile/teacher.jsp" />
         <option value="$PROJECT_DIR$/web/profile/manager.jsp" />
-        <option value="$PROJECT_DIR$/web/manager.jsp" />
         <option value="$PROJECT_DIR$/web/manager/classroom.jsp" />
         <option value="$PROJECT_DIR$/web/manager/course-schedule.jsp" />
-        <option value="$PROJECT_DIR$/web/student.jsp" />
         <option value="$PROJECT_DIR$/web/profile/student.jsp" />
         <option value="$PROJECT_DIR$/web/student/student-course.jsp" />
-        <option value="$PROJECT_DIR$/web/teacher.jsp" />
         <option value="$PROJECT_DIR$/web/teacher/course-schedule.jsp" />
         <option value="$PROJECT_DIR$/web/manager/course.jsp" />
         <option value="$PROJECT_DIR$/web/student/student-choose-course.jsp" />
@@ -461,6 +142,10 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/xyz/antsgroup/course/controller/Logout.java" />
         <option value="$PROJECT_DIR$/web/assets/js/login.js" />
+        <option value="$PROJECT_DIR$/web/teacher.jsp" />
+        <option value="$PROJECT_DIR$/web/student.jsp" />
+        <option value="$PROJECT_DIR$/web/manager.jsp" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -572,296 +257,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logging" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teacher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="course-keshe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1379,12 +774,12 @@
       <workItem from="1460789389772" duration="17366000" />
       <workItem from="1460810028330" duration="5908000" />
       <workItem from="1460861305470" duration="36964000" />
-      <workItem from="1460960958825" duration="14536000" />
+      <workItem from="1460960958825" duration="16314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106182000" />
+    <option name="totallyTimeSpent" value="107960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1399,10 +794,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.057098765" sideWeight="0.49083665" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29475307" sideWeight="0.49083665" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31394422" sideWeight="0.4814815" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31394422" sideWeight="0.4814815" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31155378" sideWeight="0.5185185" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1674,20 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.6096257">
-            <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1717,8 +1098,8 @@
         <state vertical-scroll-proportion="2.5758092">
           <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2978#3008#1" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2978#3008#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1736,7 +1117,7 @@
         <state vertical-scroll-proportion="0.6541738">
           <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1875,30 +1256,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/manager.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5555553">
-          <caret line="188" column="31" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.6243656">
-          <caret line="182" column="32" selection-start-line="182" selection-start-column="32" selection-end-line="182" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/student.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.1979694">
-          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1925,8 +1282,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12392427">
+        <state vertical-scroll-proportion="0.029126214">
           <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.6096257">
+            <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5144404">
+          <caret line="184" column="77" selection-start-line="184" selection-start-column="77" selection-end-line="184" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/student.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5144404">
+          <caret line="186" column="77" selection-start-line="186" selection-start-column="77" selection-end-line="186" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/manager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19494584">
+          <caret line="194" column="56" selection-start-line="194" selection-start-column="56" selection-end-line="194" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
