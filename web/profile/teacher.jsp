@@ -24,190 +24,144 @@
   
 </head>
 <body class="hold-transition skin-blue sidebar-mini fixed ">
-  
+
 <div class="wrapper">
-  <header class="main-header">
-    <a href="<%=request.getContextPath()%>" class="logo">
-      <span class="logo-mini">Course</span>
-      <span class="logo-lg">Ants 选课系统</span>
-    </a>
+    <header class="main-header">
+        <a href="<%=request.getContextPath()%>" class="logo">
+            <span class="logo-mini">Course</span>
+            <span class="logo-lg">Ants 选课系统</span>
+        </a>
 
-    <nav class="navbar navbar-static-top" role="navigation">
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">切换导航</span>
-      </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <!-- Notifications Menu -->
-          <li class="dropdown notifications-menu">
-            <!-- Menu toggle button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">1</span>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">切换导航</span>
             </a>
-            <ul class="dropdown-menu">
-              <li class="header">您有 1 条未读消息</li>
-              <li>
-                <ul class="menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Notifications Menu -->
+                    <li class="dropdown notifications-menu">
+                        <!-- Menu toggle button -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">1</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">您有 1 条未读消息</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">查看全部消息</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- User Account Menu -->
+                    <li class="dropdown user user-menu">
+                        <!-- Menu Toggle Button -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <!-- The user image in the navbar-->
+                            <img src="<%=request.getContextPath()%>/assets/img/teacher.png" class="user-image" alt="User Image">
+                            <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                            <span class="hidden-xs">${requestScope.user.name }</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- The user image in the menu -->
+                            <li class="user-header">
+                                <img src="<%=request.getContextPath()%>/assets/img/teacher.png" class="img-circle" alt="User Image">
+                                <p>${requestScope.user.name } - 教师<small>登录时间: <%=now %></small></p>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="<%=request.getContextPath()%>/profile" class="btn btn-default btn-flat">个人信息</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="<%=request.getContextPath()%>/logout" class="btn btn-default btn-flat">退出</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-              <li class="footer"><a href="#">查看全部消息</a></li>
-            </ul>
-          </li>
+            </div>
+        </nav>
+    </header>
 
-          <!-- User Account Menu -->
-          <li class="dropdown user user-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <!-- The user image in the navbar-->
-              <img src="<%=request.getContextPath()%>/assets/img/teacher.png" class="user-image" alt="User Image">
-              <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">${requestScope.user.name }</span>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- The user image in the menu -->
-              <li class="user-header">
-                <img src="<%=request.getContextPath()%>/assets/img/teacher.png" class="img-circle" alt="User Image">
-                <p>${requestScope.user.name } - 教师<small>登录时间: <%=now %></small></p>
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="<%=request.getContextPath()%>/profile" class="btn btn-default btn-flat">个人信息</a>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="<%=request.getContextPath()%>/assets/img/teacher.png" class="img-circle" alt="User Image">
                 </div>
-                <div class="pull-right">
-                  <a href="<%=request.getContextPath()%>/logout" class="btn btn-default btn-flat">退出</a>
+                <div class="pull-left info">
+                    <p>${requestScope.user.name }</p>
+                    <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
                 </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+            </div>
 
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-    <section class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="<%=request.getContextPath()%>/assets/img/teacher.png" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>${requestScope.user.name } </p>
-          <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
-        </div>
-      </div>
+            <!-- search form (Optional) -->
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="搜索...">
+            <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                  <i class="fa fa-search"></i></button>
+            </span>
+                </div>
+            </form>
 
-      <!-- search form (Optional) -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="搜索...">
-          <span class="input-group-btn">
-            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-          </span>
-        </div>
-      </form>
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu">
+                <ul class="sidebar-menu">
 
-      <!-- Sidebar Menu -->
-      <ul class="sidebar-menu">
-        <ul class="sidebar-menu">
-          
-          <!-- 主页-->
-          <li class="header"></li>
-          <li class="">
-            <a href="<%=request.getContextPath()%>">
-              <i class="fa fa-home"></i><span>主页</span>
-            </a>
-          </li>
-          
-          <!-- 教师课程管理模块 -->
-          <li class="header">课程管理</li>
-          <li class="">
-            <a href="<%=request.getContextPath()%>/course/schedule">
-              <i class="fa fa-link"></i><span>课程教学计划</span>
-            </a>
-          </li>
-          <li class="">
-            <a href="#">
-              <i class="fa fa-link"></i><span>课程资料</span>
-            </a>
-          </li>
-          
-          <!-- 教师学生管理模块 -->
-          <li class="header">学生管理</li>
-          <li class="">
-            <a href="<%=request.getContextPath()%>/student/students">
-              <i class="fa fa-link"></i><span>花名册管理</span>
-            </a>
-          </li>
-          <li class="">
-            <a href="<%=request.getContextPath()%>/student/results">
-              <i class="fa fa-link"></i><span>成绩管理</span>
-            </a>
-          </li>
-          
-          <!-- 教师管理模块  -->
-          <li class="header">实验室</li>
-          <li class="">
-            <a href="">
-              <i class="fa fa-link"></i>
-              <span>实验室预约申请</span>
-              <i class="fa fa-angle-left pull-right"></i>
-            </a>
-            <ul class="treeview-menu">
-              <li class="">
-                <a href="<%=request.getContextPath()%>/lab/search">
-                  <i class="fa fa-circle-o"></i><span>实验室查询</span>
-                </a>
-              </li>
-              <li class="">
-                <a href="<%=request.getContextPath()%>/lab/reservation">
-                  <i class="fa fa-circle-o"></i><span>我的预约</span>
-                </a>
-              </li>
+                    <!-- 主页-->
+                    <li class="header"></li>
+                    <li class="">
+                        <a href="<%=request.getContextPath()%>">
+                            <i class="fa fa-home"></i><span>主页</span>
+                        </a>
+                    </li>
+
+                    <!-- 教师课程管理模块 -->
+                    <li class="header">课程管理</li>
+                    <li class="">
+                        <a href="<%=request.getContextPath()%>/teacher/course/schedule">
+                            <i class="fa fa-link"></i><span>课程教学计划</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-link"></i><span>课程资料</span>
+                        </a>
+                    </li>
+
+                    <!-- 教师学生管理模块 -->
+                    <li class="header">学生管理</li>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-link"></i><span>花名册管理</span>
+                        </a>
+                    </li>
+
+                    <!-- 个人资料模块-->
+                    <li class="header"></li>
+                    <li class="">
+                        <a href="<%=request.getContextPath()%>/profile">
+                            <i class="fa fa-user"></i>
+                            <span>个人资料</span>
+                        </a>
+                    </li>
+                </ul>
             </ul>
-          </li>
-          
-          <!-- 教师器材管理模块 -->
-          <li class="">
-            <a href="">
-              <i class="fa fa-link"></i><span>实验器材</span>
-              <i class="fa fa-angle-left pull-right"></i>
-            </a>
-            <ul class="treeview-menu">
-              <li class="">
-                <a href="#">
-                  <i class="fa fa-circle-o"></i><span>实验器材申请</span>
-                </a>
-              </li>
-              <li class="">
-                <a href="#">
-                  <i class="fa fa-circle-o"></i><span>使用情况登记</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-      
-          <!-- 个人资料模块-->
-          <li class="header"></li>
-          <li class="">
-            <a href="<%=request.getContextPath()%>/profile">
-              <i class="fa fa-user"></i>
-              <span>个人资料</span>
-            </a>
-          </li>
-        </ul>
-      </ul>
-    </section>
-  </aside>
+        </section>
+    </aside>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

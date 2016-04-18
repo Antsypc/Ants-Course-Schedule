@@ -1,22 +1,18 @@
 package xyz.antsgroup.course.controller.student;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import xyz.antsgroup.course.controller.manager.ClassroomServlet;
+import xyz.antsgroup.course.entity.Course;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import xyz.antsgroup.course.controller.manager.ClassroomServlet;
-import xyz.antsgroup.course.dao.BaseDao;
-import xyz.antsgroup.course.dao.impl.StudentChosenCourseDao;
-import xyz.antsgroup.course.entity.Course;
-import xyz.antsgroup.course.entity.StudentChosenCourse;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
 
 /**
  * 学生查看自己的课表

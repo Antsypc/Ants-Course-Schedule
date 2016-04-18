@@ -39,172 +39,146 @@
   
 </head>
 <body class="hold-transition skin-blue sidebar-mini fixed ">
-  
+
 <div class="wrapper">
-      <header class="main-header">
-      <a href="<%=request.getContextPath()%>" class="logo">
-        <span class="logo-mini">Course</span>
-        <span class="logo-lg">Ants 选课系统</span>
-      </a>
-
-      <nav class="navbar navbar-static-top" role="navigation">
-        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-          <span class="sr-only">切换导航</span>
+    <header class="main-header">
+        <a href="<%=request.getContextPath()%>" class="logo">
+            <span class="logo-mini">Course</span>
+            <span class="logo-lg">Ants 选课系统</span>
         </a>
-        <!-- Navbar Right Menu -->
-        <div class="navbar-custom-menu">
-          <ul class="nav navbar-nav">
-            <!-- Notifications Menu -->
-            <li class="dropdown notifications-menu">
-              <!-- Menu toggle button -->
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-bell-o"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li class="header">您有 0 条未读消息</li>
-                <li>
-                  <ul class="menu">
-                    <li>
-                      <a href="#">暂无消息</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="footer"><a href="#">查看全部消息</a></li>
-              </ul>
-            </li>
 
-            <!-- User Account Menu -->
-            <li class="dropdown user user-menu">
-              <!-- Menu Toggle Button -->
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <!-- The user image in the navbar-->
-                <img src="<%=request.getContextPath()%>/assets/img/manager.png" class="user-image" alt="User Image">
-                <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                <span class="hidden-xs">${requestScope.user.name }</span>
-              </a>
-              <ul class="dropdown-menu">
-                <!-- The user image in the menu -->
-                <li class="user-header">
-                  <img src="<%=request.getContextPath()%>/assets/img/manager.png" class="img-circle" alt="User Image">
-                  <p>
-                    ${requestScope.user.name } - 管理员<small>登录时间: <%=now %></small></p>
-                </li>
-                <!-- Menu Footer-->
-                <li class="user-footer">
-                  <div class="pull-left">
-                    <a href="<%=request.getContextPath()%>/profile" class="btn btn-default btn-flat">个人信息</a>
-                  </div>
-                  <div class="pull-right">
-                    <a href="<%=request.getContextPath()%>/logout" class="btn btn-default btn-flat">退出</a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">切换导航</span>
+            </a>
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Notifications Menu -->
+                    <li class="dropdown notifications-menu">
+                        <!-- Menu toggle button -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">您有 0 条未读消息</li>
+                            <li>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">暂无消息</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">查看全部消息</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- User Account Menu -->
+                    <li class="dropdown user user-menu">
+                        <!-- Menu Toggle Button -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <!-- The user image in the navbar-->
+                            <img src="<%=request.getContextPath()%>/assets/img/manager.png" class="user-image" alt="User Image">
+                            <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                            <span class="hidden-xs">${requestScope.user.name }</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- The user image in the menu -->
+                            <li class="user-header">
+                                <img src="<%=request.getContextPath()%>/assets/img/manager.png" class="img-circle" alt="User Image">
+                                <p>
+                                    ${requestScope.user.name } - 管理员<small>登录时间: <%=now %></small></p>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="<%=request.getContextPath()%>/profile" class="btn btn-default btn-flat">个人信息</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="<%=request.getContextPath()%>/logout" class="btn btn-default btn-flat">退出</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <!-- Left side column. contains the logo and sidebar -->
     <aside class="main-sidebar">
-      <section class="sidebar">
-        <!-- Sidebar user panel (optional) -->
-        <div class="user-panel">
-          <div class="pull-left image">
-            <img src="<%=request.getContextPath()%>/assets/img/manager.png" class="img-circle" alt="User Image">
-          </div>
-          <div class="pull-left info">
-            <p>
-              ${requestScope.user.name }
-            </p>
-            <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
-          </div>
-        </div>
+        <section class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="<%=request.getContextPath()%>/assets/img/manager.png" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p>
+                        ${requestScope.user.name }
+                    </p>
+                    <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+                </div>
+            </div>
 
-        <!-- search form (Optional) -->
-        <form action="#" method="get" class="sidebar-form">
-          <div class="input-group">
-            <input type="text" name="q" class="form-control" placeholder="搜索...">
+            <!-- search form (Optional) -->
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="搜索...">
             <span class="input-group-btn">
             <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
           </span>
-          </div>
-        </form>
+                </div>
+            </form>
 
-        <!-- Sidebar Menu -->
-        <ul class="sidebar-menu">
-          <ul class="sidebar-menu">
-            <li class="header"></li>
-            <li>
-              <a href="<%=request.getContextPath()%>">
-                <i class="fa fa-dashboard"></i>
-                <span>主页</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa fa-flask"></i>
-                <span>实验室管理</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="<%=request.getContextPath()%>/lab/manage/search">
-                    <i class="fa fa-circle-o"></i>
-                    <span>实验室查询</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="<%=request.getContextPath()%>/lab/review">
-                    <i class="fa fa-circle-o"></i>
-                    <span>实验室预约申请审核</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa fa-gears"></i>
-                <span>仪器设备及耗材管理</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="<%=request.getContextPath()%>/equipment/equipment">
-                    <i class="fa fa-circle-o"></i>
-                    <span>设备管理</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="<%=request.getContextPath()%>/equipment/repair">
-                    <i class="fa fa-circle-o"></i>
-                    <span>设备维修管理</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="<%=request.getContextPath()%>/equipment/consumables">
-                    <i class="fa fa-circle-o"></i>
-                    <span>耗材管理</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-users"></i>
-                <span>用户管理</span>
-              </a>
-            </li>
-            <li class="header"></li>
-            <li class="active">
-              <a href="<%=request.getContextPath()%>/profile">
-                <i class="fa fa-user"></i>
-                <span>个人资料</span>
-              </a>
-            </li>
-          </ul>
-        </ul>
-      </section>
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu">
+                <ul class="sidebar-menu">
+                    <li class="header"></li>
+                    <li class="active">
+                        <a href="<%=request.getContextPath()%>">
+                            <i class="fa fa-dashboard"></i>
+                            <span>主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<%=request.getContextPath()%>/manager/classroom">
+                            <i class="fa fa-flask"></i>
+                            <span>查看教室</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<%=request.getContextPath()%>/manager/course">
+                            <i class="fa fa-gears"></i>
+                            <span>查看课表</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<%=request.getContextPath()%>/manager/course/schedule">
+                            <i class="fa fa-gears"></i>
+                            <span>排课</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-users"></i>
+                            <span>用户管理</span>
+                        </a>
+                    </li>
+                    <li class="header"></li>
+                    <li>
+                        <a href="<%=request.getContextPath()%>/profile">
+                            <i class="fa fa-user"></i>
+                            <span>个人资料</span>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </section>
     </aside>
 
   <!-- Content Wrapper. Contains page content -->

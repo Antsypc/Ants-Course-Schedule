@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
-  <title>实验室管理系统</title>
+  <title>Ants 选课系统</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
@@ -188,98 +188,6 @@
       <!-- Main content -->
       <section class="content">
 
-        <ul class="timeline">
-          <li class="time-label">
-            <span class="bg-red">2016 年 01 月 03 日</span>
-          </li>
-          <li>
-            <i class="fa fa-envelope bg-blue"></i>
-            <div class="timeline-item">
-              <span class="time"><i class="fa fa-clock-o"></i> 22:45</span>
-              <h3 class="timeline-header"><a href="#">理工四少</a> 发布了一个公告</h3>
-              <div class="timeline-body">
-                “我们的实验室管理系统终于完成了！”
-                <br> 经过了为期一个月的艰苦奋斗，宵衣旰食、乐此不疲的Coding，我们的成果终于和大家见面了！欢迎大家使用！
-              </div>
-              <div class="timeline-footer">
-                <a class="btn btn-primary btn-xs">阅读详情</a>
-              </div>
-            </div>
-          </li>
-          <li class="time-label">
-            <span class="bg-red">2016 年 01 月 02 日</span>
-          </li>
-          <li>
-            <i class="fa fa-envelope bg-blue"></i>
-            <div class="timeline-item">
-              <span class="time"><i class="fa fa-clock-o"></i> 10:45</span>
-              <h3 class="timeline-header"><a href="#">高文昌</a> 发布了一个公告</h3>
-              <div class="timeline-body">
-                “新进浓硫酸”
-                <br> 东院302实验室新进了一批浓硫酸，欢迎大家来品尝~~~^_^
-              </div>
-              <div class="timeline-footer">
-                <a class="btn btn-primary btn-xs">阅读详情</a>
-              </div>
-            </div>
-          </li>
-          <li class="time-label">
-            <span class="bg-red">2015 年 12 月 27 日</span>
-          </li>
-          <li>
-            <i class="fa fa-envelope bg-blue"></i>
-            <div class="timeline-item">
-              <span class="time"><i class="fa fa-clock-o"></i> 08:00</span>
-              <h3 class="timeline-header"><a href="#">邓飞</a> 发布了一个公告</h3>
-              <div class="timeline-body">
-                “走上人生巅峰第一步———>>>”
-                <br> 鉴主12楼的实验室全部换成了苹果电脑，小伙伴们快来体验吧~
-              </div>
-              <div class="timeline-footer">
-                <a class="btn btn-primary btn-xs">阅读详情</a>
-              </div>
-            </div>
-          </li>
-          <li class="time-label">
-            <span class="bg-red">2016 年 01 月 01 日</span>
-          </li>
-          <li>
-            <i class="fa fa-envelope bg-blue"></i>
-            <div class="timeline-item">
-              <span class="time"><i class="fa fa-clock-o"></i> 12:45</span>
-              <h3 class="timeline-header"><a href="#">李进锋</a> 发布了一个公告</h3>
-              <div class="timeline-body">
-                “天上掉馅饼”
-                <br> 鉴主的实验室器材全部报废了，哈哈哈哈，大家可以好好休息几天不用做实验了。。。
-              </div>
-              <div class="timeline-footer">
-                <a class="btn btn-primary btn-xs">阅读详情</a>
-              </div>
-            </div>
-          </li>
-          <li class="time-label">
-            <span class="bg-red">2015 年 12 月 10 日</span>
-          </li>
-          <li>
-            <i class="fa fa-envelope bg-blue"></i>
-            <div class="timeline-item">
-              <span class="time"><i class="fa fa-clock-o"></i> 12:45</span>
-              <h3 class="timeline-header"><a href="#">杨鹏程</a> 发布了一个公告</h3>
-              <div class="timeline-body">
-                “开始撸代码了”
-                <br> 小伙伴们，理工四少又要开始发功了，实验室管理系统，走着~
-              </div>
-              <div class="timeline-footer">
-                <a class="btn btn-primary btn-xs">阅读详情</a>
-              </div>
-            </div>
-          </li>
-
-
-          <li>
-            <i class="fa fa-clock-o bg-gray"></i>
-          </li>
-        </ul>
       </section>
     </div>
 

@@ -49,7 +49,17 @@ public class LoginCheck extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/logging/login.jsp").forward(request,response);
+        String identity = (String) request.getSession().getAttribute("identity");
+        String contextPath = request.getContextPath();
+        if("student".equals(identity)) {
+            response.sendRedirect(contextPath + "/student.jsp");
+        } else if("teacher".equals(identity)) {
+            response.sendRedirect(contextPath + "/teacher.jsp");
+        } else if("manager".equals(identity)) {
+            response.sendRedirect(contextPath + "/manager.jsp");
+        } else {
+            request.getRequestDispatcher("/logging/login.jsp").forward(request, response);
+        }
     }
 
     /**
@@ -73,7 +83,6 @@ public class LoginCheck extends HttpServlet {
             try (SqlSession sqlSession = sessionFactory.openSession()) {
                 Student student = sqlSession.selectOne("Student.getStudentById", username);
                 if (student != null && password.equals(student.getPassword())) {
-                    System.out.println("登录成功...");
                     session.setAttribute("identity", identity); // 设置该session代表用户的身份
                     session.setAttribute("id", username); // 设置该session代表用户的id
                     session.setAttribute("name", student.getName());

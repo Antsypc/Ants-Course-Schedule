@@ -87,12 +87,8 @@
                             <!-- The user image in the menu -->
                             <li class="user-header">
                                 <img src="<%=request.getContextPath()%>/assets/img/student.png" class="img-circle" alt="User Image">
-
                                 <p>
-                                    <%=username%> - 学生
-                                    <small>登录时间: <%=now %>
-                                    </small>
-                                </p>
+                                    <%=username%> - 学生<small>登录时间: <%=now %></small></p>
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
@@ -131,8 +127,7 @@
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="搜索...">
             <span class="input-group-btn">
-            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-            </button>
+            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
           </span>
                 </div>
             </form>
@@ -141,28 +136,22 @@
             <ul class="sidebar-menu">
                 <ul class="sidebar-menu">
                     <li class="header"></li>
-                    <li>
-                        <a href="/">
+                    <li class="active">
+                        <a href="<%=request.getContextPath()%>">
                             <i class="fa fa-dashboard"></i>
                             <span>主页</span>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="/student/course/choose">
+                    <li>
+                        <a href="<%=request.getContextPath()%>/student/course/choose">
                             <i class="fa fa-graduation-cap"></i>
                             <span>选课</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/student/course">
+                        <a href="<%=request.getContextPath()%>/student/course">
                             <i class="fa fa-calendar-o"></i>
                             <span>我的课表</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/student/scores">
-                            <i class="fa fa-tags"></i>
-                            <span>我的成绩</span>
                         </a>
                     </li>
                     <li>
@@ -173,7 +162,7 @@
                     </li>
                     <li class="header"></li>
                     <li>
-                        <a href="/profile">
+                        <a href="<%=request.getContextPath()%>/profile">
                             <i class="fa fa-user"></i>
                             <span>个人资料</span>
                         </a>
@@ -188,12 +177,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>选课
-                <small>Course Select</small>
+                <small>Course Choose</small>
             </h1>
 
             <ol class="breadcrumb">
                 <li><a href="<%=request.getContextPath()%>"><i class="fa fa-dashboard"></i>主页</a></li>
-                <li class="active">选课系统</li>
+                <li class="active">选课</li>
             </ol>
 
         </section>

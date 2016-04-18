@@ -6,13 +6,13 @@
             <!-- pattern 中详细参数见 http://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout-->
             <PatternLayout pattern="%d [%t] %highlight{%-5level} %logger{36} - %msg%mdc%n%throwable"/>
         </Console>
-        <File name="Login" fileName="login.log" append="false">
+        <File name="Login" fileName="/var/log/apache/course/login.log" append="true">
             <PatternLayout pattern="%d [%t] %-5level %logger{36} - %msg%mdc%n%throwable"/>
         </File>
-        <File name="PostCourse" fileName="post_course.log" append="false">
+        <File name="PostCourse" fileName="/var/log/apache/course/post_course.log" append="true">
             <PatternLayout pattern="%d [%t] %-5level %logger{36} - %msg%mdc%n%throwable"/>
         </File>
-        <File name="ChooseCourse" fileName="choose_course.log" append="false">
+        <File name="ChooseCourse" fileName="/var/log/apache/course/choose_course.log" append="true">
             <PatternLayout pattern="%d [%t] %-5level %logger{36} - %msg%mdc%n%throwable"/>
         </File>
     </appenders>

@@ -1,5 +1,18 @@
 package xyz.antsgroup.course.controller.student;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import xyz.antsgroup.course.controller.manager.ClassroomServlet;
+import xyz.antsgroup.course.entity.Course;
+import xyz.antsgroup.course.entity.CourseChooseLog;
+import xyz.antsgroup.course.entity.Student;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,21 +20,6 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import xyz.antsgroup.course.controller.manager.ClassroomServlet;
-import xyz.antsgroup.course.dao.impl.CourseChooseLogDao;
-import xyz.antsgroup.course.entity.Course;
-import xyz.antsgroup.course.entity.CourseChooseLog;
-import xyz.antsgroup.course.entity.Student;
 
 /**
  * 学生选课情况
@@ -88,7 +86,6 @@ public class ChooseCourseServlet extends HttpServlet {
                     c.setTeacherId("<button data-priority=\"2\" class=\"btn btn-xs btn-danger\">"
                             + "<i class=\"fa fa-remove\"></i> 退选</button>");
                 }
-                System.out.println(c);
             }
         }
 

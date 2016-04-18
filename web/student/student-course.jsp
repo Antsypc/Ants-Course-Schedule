@@ -79,22 +79,16 @@
                         <!-- Menu Toggle Button -->
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <!-- The user image in the navbar-->
-                            <img src="<%=request.getContextPath()%>/assets/img/student.png" class="user-image"
-                                 alt="User Image">
+                            <img src="<%=request.getContextPath()%>/assets/img/student.png" class="user-image" alt="User Image">
                             <!-- hidden-xs hides the username on small devices so only the image appears. -->
                             <span class="hidden-xs"><%=username%></span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
-                                <img src="<%=request.getContextPath()%>/assets/img/student.png" class="img-circle"
-                                     alt="User Image">
-
+                                <img src="<%=request.getContextPath()%>/assets/img/student.png" class="img-circle" alt="User Image">
                                 <p>
-                                    <%=username%> - 学生
-                                    <small>登录时间: <%=now %>
-                                    </small>
-                                </p>
+                                    <%=username%> - 学生<small>登录时间: <%=now %></small></p>
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
@@ -102,8 +96,7 @@
                                     <a href="<%=request.getContextPath()%>/profile" class="btn btn-default btn-flat">个人信息</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="<%=request.getContextPath()%>/logout"
-                                       class="btn btn-default btn-flat">退出</a>
+                                    <a href="<%=request.getContextPath()%>/logout" class="btn btn-default btn-flat">退出</a>
                                 </div>
                             </li>
                         </ul>
@@ -134,8 +127,7 @@
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="搜索...">
             <span class="input-group-btn">
-            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-            </button>
+            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
           </span>
                 </div>
             </form>
@@ -144,28 +136,22 @@
             <ul class="sidebar-menu">
                 <ul class="sidebar-menu">
                     <li class="header"></li>
-                    <li>
-                        <a href="/">
+                    <li class="active">
+                        <a href="<%=request.getContextPath()%>">
                             <i class="fa fa-dashboard"></i>
                             <span>主页</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/student/course/choose">
+                        <a href="<%=request.getContextPath()%>/student/course/choose">
                             <i class="fa fa-graduation-cap"></i>
                             <span>选课</span>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="/student/course">
+                    <li>
+                        <a href="<%=request.getContextPath()%>/student/course">
                             <i class="fa fa-calendar-o"></i>
                             <span>我的课表</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/student/scores">
-                            <i class="fa fa-tags"></i>
-                            <span>我的成绩</span>
                         </a>
                     </li>
                     <li>
@@ -176,7 +162,7 @@
                     </li>
                     <li class="header"></li>
                     <li>
-                        <a href="/profile">
+                        <a href="<%=request.getContextPath()%>/profile">
                             <i class="fa fa-user"></i>
                             <span>个人资料</span>
                         </a>
@@ -196,7 +182,7 @@
 
             <ol class="breadcrumb">
                 <li><a href="<%=request.getContextPath()%>"><i class="fa fa-dashboard"></i>主页</a></li>
-                <li class="active">选课系统</li>
+                <li class="active">我的课表</li>
             </ol>
 
         </section>

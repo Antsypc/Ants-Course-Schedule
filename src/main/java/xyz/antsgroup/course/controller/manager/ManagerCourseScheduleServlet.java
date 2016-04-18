@@ -96,7 +96,6 @@ public class ManagerCourseScheduleServlet extends HttpServlet {
         course.setTeacherName((String) request.getSession().getAttribute("name"));
         course.setDescription(map.get("note"));
 
-        System.out.println(course);
 
         try (SqlSession sqlSession = sessionFactory.openSession()){
             int num = sqlSession.insert("Course.insertCourse", course);
@@ -120,7 +119,6 @@ public class ManagerCourseScheduleServlet extends HttpServlet {
         course.setTeacherName((String) request.getSession().getAttribute("name"));
         course.setDescription(map.get("note"));
 
-        System.out.println(course);
 
         try (SqlSession sqlSession = sessionFactory.openSession()){
             int num = sqlSession.update("Course.updateCourse", course);

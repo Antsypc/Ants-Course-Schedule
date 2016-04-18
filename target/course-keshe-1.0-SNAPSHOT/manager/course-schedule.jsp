@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
-    <title>实验室管理系统</title>
+    <title>Ants 选课系统</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
@@ -86,7 +86,8 @@
                             <!-- The user image in the menu -->
                             <li class="user-header">
                                 <img src="<%=request.getContextPath()%>/assets/img/manager.png" class="img-circle" alt="User Image">
-                                <p><%=username%> - 管理员<small>登录时间: <%=now %></small></p>
+                                <p>
+                                    <%=username%> - 管理员<small>登录时间: <%=now %></small></p>
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
@@ -134,60 +135,34 @@
             <ul class="sidebar-menu">
                 <ul class="sidebar-menu">
                     <li class="header"></li>
-                    <li>
-                        <a href="">
+                    <li class="active">
+                        <a href="<%=request.getContextPath()%>">
                             <i class="fa fa-dashboard"></i>
                             <span>主页</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="<%=request.getContextPath()%>/manager/classroom">
                             <i class="fa fa-flask"></i>
-                            <span>实验室管理</span>
+                            <span>查看教室</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
-                        <ul class="treeview-menu">
-                            <li>
-                                <a href="/lab/manage/search">
-                                    <i class="fa fa-circle-o"></i>
-                                    <span>实验室查询</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/lab/review">
-                                    <i class="fa fa-circle-o"></i>
-                                    <span>实验室预约申请审核</span>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
-                    <li class="active">
-                        <a href="">
+                    <li>
+                        <a href="<%=request.getContextPath()%>/manager/course">
                             <i class="fa fa-gears"></i>
-                            <span>仪器设备及耗材管理</span>
+                            <span>查看课表</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
-                        <ul class="treeview-menu">
-                            <li class="active">
-                                <a href="/equipment/equipment">
-                                    <i class="fa fa-circle-o"></i>
-                                    <span>设备管理</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/equipment/repair">
-                                    <i class="fa fa-circle-o"></i>
-                                    <span>设备维修管理</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/equipment/consumables">
-                                    <i class="fa fa-circle-o"></i>
-                                    <span>耗材管理</span>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
+                    <li>
+                        <a href="<%=request.getContextPath()%>/manager/course/schedule">
+                            <i class="fa fa-gears"></i>
+                            <span>排课</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+
                     <li>
                         <a href="#">
                             <i class="fa fa-users"></i>
@@ -196,7 +171,7 @@
                     </li>
                     <li class="header"></li>
                     <li>
-                        <a href="/profile">
+                        <a href="<%=request.getContextPath()%>/profile">
                             <i class="fa fa-user"></i>
                             <span>个人资料</span>
                         </a>
@@ -213,7 +188,7 @@
 
             <ol class="breadcrumb">
                 <li><a href="<%=request.getContextPath()%>"><i class="fa fa-dashboard"></i>主页</a></li>
-                <li class="active">课程管理</li>
+                <li class="active">排课</li>
             </ol>
 
         </section>
