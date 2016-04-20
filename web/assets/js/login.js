@@ -24,7 +24,7 @@
     '/course/assets/img/backgrounds/fb78318a-d895-418f-ad80-172bbafc35e0.jpg'
   ];
   Shuffle(backgrounds);
-  $.backstretch(backgrounds, {
+  $.backstretch(backgrounds.slice(0, 3), {
     duration: 12000,
     fade: 750
   });
