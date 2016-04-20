@@ -5,27 +5,32 @@
 
 
 <mapper namespace="CourseChooseLog">
+    <!-- 根据选课日志 ID 获取选课日志记录对象 -->
     <select id="getCourseChooseLogById" resultType="CourseChooseLog">
         SELECT * FROM course_choose_log WHERE id = #{id}
     </select>
+    <!-- 根据学生 ID 获取该学生所有选课记录 -->
     <select id="getCourseChooseLogByStudentId" resultType="CourseChooseLog">
         SELECT * FROM course_choose_log WHERE student_id = #{studentId}
     </select>
+    <!-- 根据学生 ID 获取该学生所有已选课程的 ID -->
     <select id="getChosenCourseIdByStudentId" resultType="int">
         SELECT course_id FROM course_choose_log WHERE student_id = #{studentId};
     </select>
+    <!-- 根据学生 ID 和课程 ID 获取选课记录对象 -->
     <select id="getLogByStudentIdCourseId" resultType="CourseChooseLog">
         SELECT * FROM course_choose_log WHERE student_id = #{studentId} AND course_id = #{courseId}
     </select>
-
+    <!-- 插入一条选课记录 -->
     <insert id="insertLog" parameterType="CourseChooseLog">
         INSERT INTO course_choose_log(id, student_id, course_id, time) VALUE
         (#{id}, #{studentId}, #{courseId}, #{time})
     </insert>
-
+    <!-- 根据选课记录 ID 删除一条选课记录 -->
     <delete id="deleteLogByCourseId">
         DELETE FROM course_choose_log WHERE course_id = #{courseId}
     </delete>
+    <!-- 根据学生 ID 和课程 ID 删除选课记录 -->
     <delete id="deleteLogByCourseIdStudentId">
         DELETE FROM course_choose_log WHERE course_id = #{courseId} AND student_id = #{studentId}
     </delete>
