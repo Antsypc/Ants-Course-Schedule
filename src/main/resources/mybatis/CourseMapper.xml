@@ -3,29 +3,32 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-
 <mapper namespace="Course">
-
+    <!-- 根据 ID 获取课程对象 -->
     <select id="getCourseById" resultType="Course">
         SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
          SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
         FROM course WHERE id = #{id}
     </select>
+    <!-- 根据课程名字获取课程对象 -->
     <select id="getCourseByName" resultType="Course">
         SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
          SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
         FROM course WHERE name = #{name}
     </select>
+    <!-- 根据教师 ID 获取该教师所有申报课程 -->
     <select id="getCourseByTeacherId" resultType="Course">
         SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
          SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
         FROM course WHERE teacher_id = #{teacherId}
     </select>
+    <!-- 获取当前所有课程 -->
     <select id="getAllCourses" resultType="Course">
         SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
          SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
         FROM course
     </select>
+    <!-- 根据课程条件获取课程对象 -->
     <select id="getCoursesByCondition" resultType="Course">
         SELECT id,  name,  classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
         SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
@@ -42,20 +45,19 @@
             </if>
         </where>
     </select>
+    <!-- 根据学生 ID 获取该学生所有课程信息 -->
     <select id="getChosenCourseByStudentId" resultType="Course">
         SELECT c.id,  c.name,  c.classes,  week_from,  week_to,  weekday,  SEC_TO_TIME(time_from) as time_from,
         SEC_TO_TIME(time_to) as time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description
         FROM course AS c INNER JOIN (SELECT * FROM course_choose_log WHERE student_id = #{studentId}) AS chosen
         ON c.id = chosen.course_id
     </select>
-
-
+    <!-- 插入一条课程信息-->
     <insert id="insertCourse" parameterType="Course">
         INSERT INTO course(id,  name,  classes,  week_from,  week_to,  weekday,  time_from,  time_to,  classroom_id,  capacity, now, teacher_id,  teacher_name,  courseware_url,  description)
         VALUE (#{id},  #{name},  #{classes},  #{weekFrom},  #{weekTo},  #{weekday},  TIME_TO_SEC(#{timeFrom}),  TIME_TO_SEC(#{timeTo}),  #{classroomId}, #{capacity}, #{now}, #{teacherId},  #{teacherName},  #{coursewareUrl},  #{description})
     </insert>
-
-
+    <!-- 根据课程 ID 更新一条课程信息 -->
     <update id="updateCourse" parameterType="Course">
         UPDATE course SET
             name =  #{name},
@@ -74,20 +76,20 @@
             description =  #{description}
         WHERE id = #{id}
     </update>
-
+    <!-- 如果课程容量未满则更新当前课程已选人数 -->
     <update id="updateSafeForStudentChoose">
         UPDATE course SET
             now = now + 1
         WHERE id = #{id} AND now &lt; capacity
     </update>
+    <!-- 如果学生退课，课程已选人数加一 -->
     <update id="updateForStudentDrop">
         UPDATE course SET
             now = now - 1
         WHERE id = #{id}
     </update>
-
+    <!-- 根据课程 ID 删除课程信息 -->
     <delete id="deleteCourse">
       DELETE FROM course WHERE id = #{id}
     </delete>
-
 </mapper>

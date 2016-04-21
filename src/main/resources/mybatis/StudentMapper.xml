@@ -3,16 +3,16 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-
 <mapper namespace="Student">
-
+    <!-- 根据学生 ID 获取学生对象信息 -->
     <select id="getStudentById" resultType="Student">
         SELECT * FROM student WHERE id = #{id}
     </select>
+    <!-- 根据学生姓名获取学生信息 -->
     <select id="getStudentByName" resultType="Student">
         SELECT * FROM student WHERE name = #{name}
     </select>
-
+    <!-- 根据学生 ID 更新学生信息 -->
     <update id="updateStudent">
         UPDATE student SET
             id = #{id},
@@ -28,5 +28,4 @@
             email = #{email}
         WHERE id = #{id}
     </update>
-
 </mapper>

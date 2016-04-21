@@ -5,14 +5,15 @@
 
 
 <mapper namespace="Classroom">
-
+    <!-- 根据 ID 获取教室对象 -->
     <select id="getClassroomById" resultType="Classroom">
         SELECT * FROM classroom
     </select>
+    <!-- 根据教室名字获取教室对象 -->
     <select id="getClassroomByName" resultType="Classroom">
         SELECT * FROM classroom
     </select>
-
+    <!-- 根据教室特征获取教室对象 -->
     <select id="getRoomByConditions" resultType="Classroom">
         SELECT * FROM classroom
         <where>
@@ -23,9 +24,5 @@
                 AND roomType = #{roomType}
             </if>
         </where>
-
     </select>
-
-
-
 </mapper>
