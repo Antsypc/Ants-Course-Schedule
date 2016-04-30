@@ -46,7 +46,7 @@ public class ClassroomServlet extends HttpServlet {
         String campus = request.getParameter("campus");
         String type = request.getParameter("type");
         if(campus == null || type == null) {
-            request.getRequestDispatcher("/manager/classroom.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/page/manager/classroom.jsp").forward(request, response);
             return;
         }
         
@@ -72,7 +72,7 @@ public class ClassroomServlet extends HttpServlet {
             request.setAttribute("campus", campus);
             request.setAttribute("type", type);
         }
-        request.getRequestDispatcher("/manager/classroom.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/page/manager/classroom.jsp").forward(request, response);
 	}
 
 	/**

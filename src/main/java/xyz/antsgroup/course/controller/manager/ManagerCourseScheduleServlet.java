@@ -78,7 +78,7 @@ public class ManagerCourseScheduleServlet extends HttpServlet {
         request.setAttribute("courseList", courseList);
         request.setAttribute("major", major);
         request.setAttribute("isSchedule", isSchedule);
-        request.getRequestDispatcher("/manager/course-schedule.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/page/manager/course-schedule.jsp").forward(request, response);
     }
 
     private String addCourse(HttpServletRequest request, Map<String, String> map) throws ServletException,IOException {
