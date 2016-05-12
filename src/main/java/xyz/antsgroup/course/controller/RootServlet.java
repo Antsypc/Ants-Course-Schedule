@@ -30,11 +30,11 @@ public class RootServlet extends HttpServlet {
 	    String identity = (String) request.getSession().getAttribute("identity");
         String contextPath = request.getContextPath();
 	    if("student".equals(identity)) {
-	        response.sendRedirect(contextPath + "/WEB-INF/page/student.jsp");
+	        response.sendRedirect(contextPath + "/student");
 	    } else if("teacher".equals(identity)) {
-	        response.sendRedirect(contextPath + "/WEB-INF/page/teacher.jsp");
+	        response.sendRedirect(contextPath + "/teacher");
 	    } else if("manager".equals(identity)) {
-	        response.sendRedirect(contextPath + "/WEB-INF/page/manager.jsp");
+	        response.sendRedirect(contextPath + "/manager");
 	    } else {
 	        response.sendRedirect(contextPath + "/login");
 	    }
