@@ -457,9 +457,9 @@
             $modal.find('[name=note]').val($tr.data('note'));
         }
 
-        function modal_disable_inputs() {
+        function modal_disable_inputs(flag) {
             var $modal = $('#course-modal');
-            $modal.find('input').prop('disabled', true);
+            $modal.find('input').prop('disabled', flag);
         }
 
         // 新建课程
@@ -484,6 +484,7 @@
             var $modal = $('#course-modal');
             $modal.find('.modal-title').text('编辑课程');
             modal_assign($tr);
+            modal_disable_inputs(false);
             $modal.find('#input-course-now').prop('disabled', true);
             $modal.find('[name=action]').val('edit');
             $modal.modal('show');
@@ -494,7 +495,7 @@
             var $modal = $('#course-modal');
             $modal.find('.modal-title').text('删除课程');
             modal_assign($tr);
-            modal_disable_inputs();
+            modal_disable_inputs(true);
             $modal.find('#input-course-note').prop('disabled', true);
             $modal.find('#timeFrom').prop('disabled', true);
             $modal.find('[name=action]').val('scrap');
