@@ -39,6 +39,6 @@ public class CourseServlet extends HttpServlet {
             courses = sqlSession.selectList("Course.getAllCourses");
         }
         request.setAttribute("courseList", courses);
-        request.getRequestDispatcher("/manager/course.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/page/manager/course.jsp").forward(request, response);
     }
 }

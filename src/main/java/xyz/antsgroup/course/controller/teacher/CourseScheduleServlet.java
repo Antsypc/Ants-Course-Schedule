@@ -42,7 +42,7 @@ public class CourseScheduleServlet extends HttpServlet {
         } catch (Exception e) {
 			e.printStackTrace();
 		}
-		request.getRequestDispatcher("/teacher/course-schedule.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/page/teacher/course-schedule.jsp").forward(request, response);
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

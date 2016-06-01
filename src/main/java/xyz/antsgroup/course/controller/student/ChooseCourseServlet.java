@@ -57,7 +57,7 @@ public class ChooseCourseServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String studentId = (String)request.getSession().getAttribute("id");
-        if (studentId == null) request.getRequestDispatcher("/student/student-choose-course.jsp").forward(request, response);
+        if (studentId == null) request.getRequestDispatcher("/WEB-INF/page/student/student-choose-course.jsp").forward(request, response);
 
         List<Course> courses = null;
         List<CourseChooseLog> courseChooseLogs = null;
@@ -90,7 +90,7 @@ public class ChooseCourseServlet extends HttpServlet {
         }
 
         request.setAttribute("sclist", courses);
-        request.getRequestDispatcher("/student/student-choose-course.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/page/student/student-choose-course.jsp").forward(request, response);
     }
 
 	/**

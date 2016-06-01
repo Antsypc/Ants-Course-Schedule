@@ -52,11 +52,11 @@ public class LoginCheck extends HttpServlet {
         String identity = (String) request.getSession().getAttribute("identity");
         String contextPath = request.getContextPath();
         if("student".equals(identity)) {
-            response.sendRedirect(contextPath + "/student.jsp");
+            response.sendRedirect(contextPath + "/student");
         } else if("teacher".equals(identity)) {
-            response.sendRedirect(contextPath + "/teacher.jsp");
+            response.sendRedirect(contextPath + "/teacher");
         } else if("manager".equals(identity)) {
-            response.sendRedirect(contextPath + "/manager.jsp");
+            response.sendRedirect(contextPath + "/manager");
         } else {
             request.getRequestDispatcher("/logging/login.jsp").forward(request, response);
         }
@@ -88,7 +88,7 @@ public class LoginCheck extends HttpServlet {
                     session.setAttribute("name", student.getName());
                     // out.write(SUCCESS);
                     // 登录成功执行页面跳转到学生主页
-                    response.sendRedirect(request.getContextPath()+"/student.jsp");
+                    response.sendRedirect(request.getContextPath()+"/student");
                 } else {
                     System.out.println("登录失败...");
                     response.sendRedirect(request.getContextPath()+"/login");
@@ -104,7 +104,7 @@ public class LoginCheck extends HttpServlet {
                     session.setAttribute("name", teacher.getName());
                     // out.write(SUCCESS);
                     // 登录成功执行页面跳转到教师主页
-                    response.sendRedirect(request.getContextPath()+"/teacher.jsp");
+                    response.sendRedirect(request.getContextPath()+"/teacher");
                 } else {
                     response.sendRedirect(request.getContextPath()+"/login");
                 }
@@ -119,7 +119,7 @@ public class LoginCheck extends HttpServlet {
                     session.setAttribute("name", manager.getName());
                     // out.write(SUCCESS);
                     // 登录成功执行页面跳转到管理员
-                    response.sendRedirect(request.getContextPath()+"/manager.jsp");
+                    response.sendRedirect(request.getContextPath()+"/manager");
                 } else {
                     response.sendRedirect(request.getContextPath()+"/login");
                 }

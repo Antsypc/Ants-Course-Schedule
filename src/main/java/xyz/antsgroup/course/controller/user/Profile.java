@@ -66,15 +66,15 @@ public class Profile extends HttpServlet {
         if("student".equals(identity)) {
         // 将用户对象写入request同时返回用户对象信息的json
             result = getStudentInfo(request);       
-            request.getRequestDispatcher("/profile/student.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/page/profile/student.jsp").forward(request, response);
         } else if("teacher".equals(identity)) {
         // 将用户对象写入request同时返回用户对象信息的json
             result = getTeacherInfo(request); 
-            request.getRequestDispatcher("/profile/teacher.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/page/profile/teacher.jsp").forward(request, response);
         } else if("manager".equals(identity)) {
          // 将用户对象写入request同时返回用户对象信息的json
             result = getLabManagerInfo(request); 
-            request.getRequestDispatcher("/profile/manager.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/page/profile/manager.jsp").forward(request, response);
         } else {
             System.out.println("no user");
             //out.write(FAILURE);

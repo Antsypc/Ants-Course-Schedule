@@ -47,7 +47,7 @@ public class CourseServlet extends HttpServlet {
             courseList = sqlSession.selectList("Course.getChosenCourseByStudentId", studentId);
         }
         request.setAttribute("courseList", courseList);
-        request.getRequestDispatcher("/student/student-course.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/page/student/student-course.jsp").forward(request, response);
 	}
 
 	/**

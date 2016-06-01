@@ -5,6 +5,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import xyz.antsgroup.course.entity.Course;
+import xyz.antsgroup.course.entity.Teacher;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -78,7 +79,7 @@ public class ManagerCourseScheduleServlet extends HttpServlet {
         request.setAttribute("courseList", courseList);
         request.setAttribute("major", major);
         request.setAttribute("isSchedule", isSchedule);
-        request.getRequestDispatcher("/manager/course-schedule.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/page/manager/course-schedule.jsp").forward(request, response);
     }
 
     private String addCourse(HttpServletRequest request, Map<String, String> map) throws ServletException,IOException {
@@ -104,23 +105,24 @@ public class ManagerCourseScheduleServlet extends HttpServlet {
         }
     }
     private String editCourse(HttpServletRequest request, Map<String, String> map) throws ServletException,IOException {
-        Course course = new Course();
-        course.setId(Integer.valueOf(map.get("id")));
-        course.setName(map.get("name"));
-        course.setClasses(map.get("classes"));
-        course.setWeekFrom(Integer.valueOf(map.get("weekFrom")));
-        course.setWeekTo(Integer.valueOf(map.get("weekTo")));
-        course.setWeekday(Integer.valueOf(map.get("weekday")));
-        course.setTimeFrom(map.get("timeFrom"));
-        course.setTimeTo(map.get("timeTo"));
-        course.setClassroomId(map.get("classroom"));
-        course.setCapacity(Integer.valueOf(map.get("capacity")));
-        course.setTeacherId((String) request.getSession().getAttribute("id"));
-        course.setTeacherName((String) request.getSession().getAttribute("name"));
-        course.setDescription(map.get("note"));
+        try (SqlSession sqlSession = sessionFactory.openSession()) {
+            Course course = new Course();
+            course.setId(Integer.valueOf(map.get("id")));
+            course.setName(map.get("name"));
+            course.setClasses(map.get("classes"));
+            course.setWeekFrom(Integer.valueOf(map.get("weekFrom")));
+            course.setWeekTo(Integer.valueOf(map.get("weekTo")));
+            course.setWeekday(Integer.valueOf(map.get("weekday")));
+            course.setTimeFrom(map.get("timeFrom"));
+            course.setTimeTo(map.get("timeTo"));
+            course.setClassroomId(map.get("classroom"));
+            course.setCapacity(Integer.valueOf(map.get("capacity")));
+            Teacher teacher = sqlSession.selectOne("Teacher.getTeacherById", map.get("teacherId"));
+            course.setTeacherId(teacher.getId());
+            course.setTeacherName(teacher.getName());
+            course.setDescription(map.get("note"));
 
 
-        try (SqlSession sqlSession = sessionFactory.openSession()){
             int num = sqlSession.update("Course.updateCourse", course);
             sqlSession.commit();
             return num == 1 ? SUCCESS : FAILURE;

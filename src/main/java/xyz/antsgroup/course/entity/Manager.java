@@ -6,7 +6,7 @@ package xyz.antsgroup.course.entity;
 
 public class Manager {
 
-	private String labManagerId;
+	private String id;
 	private String password;
 	private String name;
 	private String position;
@@ -15,7 +15,7 @@ public class Manager {
 	private String email;
 	
 	/*
-    labManagerId CHAR(8) NOT NULL PRIMARY KEY,        # 员工编号
+    id CHAR(8) NOT NULL PRIMARY KEY,        # 员工编号
     password VARCHAR(26) NOT NULL,          # 密码
     name VARCHAR(20) NOT NULL,              # 姓名
     position VARCHAR(10) NOT NULL,          # 职位
@@ -25,11 +25,11 @@ public class Manager {
      */
     
 	
-    public String getLabManagerId() {
-        return labManagerId;
+    public String getId() {
+        return id;
     }
-    public void setLabManagerId(String labManagerId) {
-        this.labManagerId = labManagerId;
+    public void setId(String id) {
+        this.id = id;
     }
     public String getPassword() {
         return password;
