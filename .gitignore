@@ -3,5 +3,5 @@
 .jar
 .ear
 *target*
-*.log
+.log
 out/
