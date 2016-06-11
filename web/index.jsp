@@ -65,10 +65,10 @@
 					thumb_links	:	1,	
 					thumbnail_navigation : 0,	//不显示缩略图
 					slides :[	// 轮播图片
-										{image : '/assets/img/slide/img1.jpg', url : '/assets/img/slide/img1.jpg'},
-										{image : '/assets/img/slide/img2.jpg', url : '/assets/img/slide/img2.jpg'},
-										{image : '/assets/img/slide/3.jpg', url : '/assets/img/slide/3.jpg'},
-										{image : '/assets/img/slide/4.jpg', url : '/assets/img/slide/4.jpg'}
+										{image : '<%=request.getContextPath()%>/assets/img/slide/img1.jpg', url : '<%=request.getContextPath()%>/assets/img/slide/img1.jpg'},
+										{image : '<%=request.getContextPath()%>/assets/img/slide/img2.jpg', url : '<%=request.getContextPath()%>/assets/img/slide/img2.jpg'},
+										{image : '<%=request.getContextPath()%>/assets/img/slide/3.jpg', url : '<%=request.getContextPath()%>/assets/img/slide/3.jpg'},
+										{image : '<%=request.getContextPath()%>/assets/img/slide/4.jpg', url : '<%=request.getContextPath()%>/assets/img/slide/4.jpg'}
 									],		   
 					progress_bar :	1,				
 					mouse_scrub	:	0

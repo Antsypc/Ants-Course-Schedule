@@ -23,7 +23,7 @@ public class Manager {
     phone CHAR(14),                         # 电话
     email VARCHAR(30)                       # 邮箱
      */
-    
+    public Manager(){}
 	
     public String getId() {
         return id;
@@ -67,8 +67,18 @@ public class Manager {
     public void setEmail(String email) {
         this.email = email;
     }
-	
 
-	
-	
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "id='" + id + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", position='" + position + '\'' +
+                ", gender='" + gender + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
