@@ -170,7 +170,6 @@ public class ManagerController {
     @RequestMapping(path = "/course/schedule", method = RequestMethod.POST)
     @ResponseBody
     public String doSchedule(HttpServletRequest request) throws Exception{
-        System.out.println("do s");
         BufferedReader in = request.getReader();
         ObjectMapper mapper = new ObjectMapper();
 
@@ -186,7 +185,6 @@ public class ManagerController {
         } else {
             result = FAILURE;
         }
-        System.out.println("r");
         return result;
     }
 

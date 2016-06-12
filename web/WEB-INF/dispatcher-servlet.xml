@@ -15,9 +15,23 @@
     <mvc:annotation-driven enable-matrix-variables="true"/>
 
     <mvc:resources mapping="/assets/**" location="/assets/"/>
+    <mvc:resources mapping="/error-pages/**" location="/error-pages/"/>
 
     <bean id="view" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/page/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
+
+    <!--<bean id="interceptor" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">-->
+        <!--<property name="interceptors">-->
+            <!--<list>-->
+                <!--<ref bean="authInterceptor"/>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+    <mvc:interceptors>
+        <bean id="authInterceptor" class="xyz.antsgroup.course.interceptor.AuthInterceptor"/>
+    </mvc:interceptors>
+
 </beans>
